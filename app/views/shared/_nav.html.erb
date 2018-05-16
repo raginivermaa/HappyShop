@@ -1,0 +1,12 @@
+<%= simple_form_for @variant do |v| %>
+  <%= v.input :name %> <br>
+  Sold out?
+  <%= v.select :sold_out, [true, false] %> <br>
+  On sale?
+  <%= v.select :under_sale, [true, false] %> <br>
+  <%= v.input :price %> <br>
+  <%= v.input :sale_price %> <br>
+  <%= v.input :sale_text %> <br>
+  <%= v.association :product, label_method: :name, include_blank: false %> <br>
+  <%= v.button :submit %>
+<% end %>

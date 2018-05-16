@@ -1,0 +1,18 @@
+<h1>Editing Variant</h1>
+
+<%#= render 'form', variant: @variant %>
+
+<% # app/views/posts/edit.html.erb %>
+
+<%= form_for @variant do |v| %>
+  Name: <%= v.text_field :name %><br/>
+  Sold out?: <%= v.text_field :sold_out %><br/>
+  On sale?: <%= v.text_field :under_sale %><br/>
+  Original price: <%= v.text_field :price %><br/>
+  Sale price: <%= v.text_field :sale_price %><br/>
+  Sale text: <%= v.text_area :sale_text %><br/>
+  <%= v.submit %>
+<% end %>
+
+<%= link_to 'Show', @variant %> |
+<%= link_to 'Back', variants_path %>

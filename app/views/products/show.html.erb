@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+  <tbody>
+  <% @product.variants.each do |variant| %>
+    <tr>
+      <% if variant.sold_out %>
+        <td><%= link_to variant.name, variant %> [SOLD OUT]</td>
+        <td><%= link_to 'Edit', edit_category_path(variant) %></td>
+        <td><%= link_to 'Destroy', variant, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      <% else %>
+        <td><%= link_to variant.name, variant %></td>
+        <td><%= link_to 'Edit', edit_category_path(variant) %></td>
+        <td><%= link_to 'Destroy', variant, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      <% end %>
+    </tr>
+  <% end %>
+  <% if @product.variants.first == nil %>
+    There are no variants right now!
+  <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Variant', new_variant_path %> |
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

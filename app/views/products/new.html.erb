@@ -1,0 +1,16 @@
+<h1>New Product</h1>
+
+<%#= render 'form', product: @product %>
+
+<%= simple_form_for @product do |f| %>
+  <%= f.input :name %> <br>
+  <%= f.input :description %> <br>
+  State <br>
+  <%= f.select :state, ['public', 'draft', 'discontinued'] %> <br> <br>
+  <%= f.association :category, label_method: :label, value_method: :id, include_blank: false %> <br>
+  <%= f.button :submit %>
+<% end %>
+
+<%= link_to 'Back', products_path %>
+
+

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+  <tbody>
+  <% if @variant.sold_out %>
+    Sorry! <%= @variant.name %> is <strong> sold out </strong>. Try another?
+  <% else %>
+    The product is <strong><%= @product.name %></strong>
+    <div/>
+    Variant is <strong><%= @variant.name %> </strong>
+    <tr></tr>
+    <div/>
+    Description: <span style="color:#3b607a"> <%= @product.description %> </span>
+    <div/>
+    Price:
+    <% if @variant.under_sale %>
+      <del><%= sprintf("$%2.2f", @variant.price / 100.00) %></del>
+      <span style="color:#ff184b"><%= sprintf("$%2.2f", (@variant.sale_price / 100.00)) %></span>
+    <% else %>
+      <%= sprintf("$%2.2f", @variant.price / 100.00) %>
+    <% end %>
+  <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Edit', edit_variant_path(@product) %> |
+<%= link_to 'Back', product_path(@product) %>

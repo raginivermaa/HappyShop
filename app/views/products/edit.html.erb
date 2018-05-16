@@ -1,0 +1,13 @@
+<h1>Editing Product</h1>
+
+<%#= render 'form', product: @product %>
+<%= form_for @product do |p| %>
+  Name: <%= p.text_field :name %><br/>
+  Description: <%= p.text_area :description %><br/>
+  State: <%= p.text_field :state %><br/>
+  <%= p.submit %>
+<% end %>
+
+<%= link_to 'Show', @product %> |
+<%= link_to 'Back', products_path %>
+

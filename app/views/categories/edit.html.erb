@@ -1,0 +1,12 @@
+<h1>Editing Category</h1>
+
+<%#= render 'form', category: @category %>
+
+<%= form_for @category do |c| %>
+  Label: <%= c.text_field :label %><br/>
+  State: <%= c.text_field :state %><br/>
+  <%= c.submit %>
+<% end %>
+
+<%= link_to 'Show', @category %> |
+<%= link_to 'Back', categories_path %>
