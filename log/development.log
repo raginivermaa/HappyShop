@@ -22796,3 +22796,1226 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 63ms (Views: 60.8ms | ActiveRecord: 0.4ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCategory Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 12:13:22 +0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.2/lib/web_console/middleware.rb:135
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 304ms (Views: 274.0ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 12:13:24 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (2.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 10]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 65ms (Views: 52.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/categories/skin-care/masks-and-treatments" for 127.0.0.1 at 2018-05-17 12:13:25 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"parent"=>"skin-care", "id"=>"masks-and-treatments"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks-and-treatments"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 11]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (3.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 11]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 54ms (Views: 45.8ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/categories/masks-and-treatments/masks" for 127.0.0.1 at 2018-05-17 12:13:27 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"parent"=>"masks-and-treatments", "id"=>"masks"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 13]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (2.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 13]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 57ms (Views: 49.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-05-17 12:13:30 +0800
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 57ms (Views: 41.0ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2018-05-17 12:13:32 +0800
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (1.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."slug_url" = $1 ORDER BY "products"."id" ASC LIMIT $2[0m  [["slug_url", "2"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:22
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mVariant Load (1.1ms)[0m  [1m[34mSELECT "variants".* FROM "variants" WHERE "variants"."product_id" = $1[0m  [["product_id", 2]]
+  ↳ app/views/products/show.html.erb:5
+  Rendered products/show.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 66ms (Views: 47.8ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-05-17 12:13:33 +0800
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 70ms (Views: 67.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 12:13:34 +0800
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (8.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (12.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (57.6ms)
+Completed 200 OK in 95ms (Views: 68.9ms | ActiveRecord: 24.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 13:57:22 +0800
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (54.7ms)
+Completed 200 OK in 114ms (Views: 87.5ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 13:57:24 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  Rendered categories/show.html.erb within layouts/application (167.1ms)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `hello_path' for #<#<Class:0x007facc1ebd230>:0x007facc0e81628>):
+    4:   <tbody>
+    5:   <% @category.subcategories.each do |subcategory| %>
+    6:     <tr>
+    7:       <td><%= link_to subcategory.label, hello_path(@category, subcategory) %></td>
+    8:       <td><%= link_to 'Edit', edit_category_path(subcategory) %></td>
+    9:       <td><%= link_to 'Destroy', subcategory, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+   10:     </tr>
+  
+app/views/categories/show.html.erb:7:in `block in _app_views_categories_show_html_erb___6778440250602964_70189973770280'
+app/views/categories/show.html.erb:5:in `_app_views_categories_show_html_erb___6778440250602964_70189973770280'
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 13:59:04 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  Rendered categories/show.html.erb within layouts/application (153.9ms)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 4.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_category_path' for #<#<Class:0x007facc61205f0>:0x007facc611aa10>
+Did you mean?  category_path):
+    4:   <tbody>
+    5:   <% @category.subcategories.each do |subcategory| %>
+    6:     <tr>
+    7:       <td><%= link_to subcategory.label, [@category, subcategory] %></td>
+    8:       <td><%= link_to 'Edit', edit_category_path(subcategory) %></td>
+    9:       <td><%= link_to 'Destroy', subcategory, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+   10:     </tr>
+  
+app/views/categories/show.html.erb:7:in `block in _app_views_categories_show_html_erb___6778440250602964_70190017087580'
+app/views/categories/show.html.erb:5:in `_app_views_categories_show_html_erb___6778440250602964_70190017087580'
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 13:59:28 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 10]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 73ms (Views: 65.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/categories/masks-and-treatments" for 127.0.0.1 at 2018-05-17 13:59:30 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks-and-treatments"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks-and-treatments"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 11]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 11]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 58ms (Views: 49.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/categories/masks" for 127.0.0.1 at 2018-05-17 13:59:31 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 13]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 13]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 46ms (Views: 35.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 13:59:33 +0800
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (2.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 72ms (Views: 63.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 13:59:35 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (1.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (20.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 10]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 82ms (Views: 49.7ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/categories/masks-and-treatments" for 127.0.0.1 at 2018-05-17 13:59:36 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks-and-treatments"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks-and-treatments"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 11]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 11]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 67ms (Views: 62.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 13:59:38 +0800
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (2.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (47.6ms)
+Completed 200 OK in 75ms (Views: 66.0ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 14:00:09 +0800
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 53ms (Views: 46.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 14:00:10 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  Rendered categories/show.html.erb within layouts/application (120.2ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `category_category_path' for #<#<Class:0x007facc61205f0>:0x007facc60bb178>
+Did you mean?  category_path):
+    4:   <tbody>
+    5:   <% @category.subcategories.each do |subcategory| %>
+    6:     <tr>
+    7:       <td><%= link_to subcategory.label, [@category, subcategory] %></td>
+    8:       <td><%= link_to 'Edit', edit_category_path(subcategory) %></td>
+    9:       <td><%= link_to 'Destroy', subcategory, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+   10:     </tr>
+  
+app/views/categories/show.html.erb:7:in `block in _app_views_categories_show_html_erb___6778440250602964_70190016880360'
+app/views/categories/show.html.erb:5:in `_app_views_categories_show_html_erb___6778440250602964_70190016880360'
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 14:07:13 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 10]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 79ms (Views: 53.6ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/categories/masks-and-treatments" for 127.0.0.1 at 2018-05-17 14:07:15 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks-and-treatments"}
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks-and-treatments"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 11]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 11]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 50ms (Views: 41.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/categories/masks" for 127.0.0.1 at 2018-05-17 14:07:16 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 13]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 13]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 43ms (Views: 39.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/categories/masks" for 127.0.0.1 at 2018-05-17 14:08:35 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 13]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 13]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-05-17 14:08:37 +0800
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 75ms (Views: 65.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2018-05-17 14:08:38 +0800
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."slug_url" = $1 ORDER BY "products"."id" ASC LIMIT $2[0m  [["slug_url", "2"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:22
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mVariant Load (0.8ms)[0m  [1m[34mSELECT "variants".* FROM "variants" WHERE "variants"."product_id" = $1[0m  [["product_id", 2]]
+  ↳ app/views/products/show.html.erb:5
+  Rendered products/show.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 73ms (Views: 60.0ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-05-17 14:08:39 +0800
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 62ms (Views: 59.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 14:08:41 +0800
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (3.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (56.2ms)
+Completed 200 OK in 90ms (Views: 77.8ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 14:08:42 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  Rendered categories/show.html.erb within layouts/application (141.6ms)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `hello_path' for #<#<Class:0x007facc1f97278>:0x007facc14b0850>):
+    4:   <tbody>
+    5:   <% @category.subcategories.each do |subcategory| %>
+    6:     <tr>
+    7:       <td><%= link_to subcategory.label, hello_path(@category, subcategory) %></td>
+    8:       <td><%= link_to 'Edit', edit_category_path(subcategory) %></td>
+    9:       <td><%= link_to 'Destroy', subcategory, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+   10:     </tr>
+  
+app/views/categories/show.html.erb:7:in `block in _app_views_categories_show_html_erb___6778440250602964_70189977132500'
+app/views/categories/show.html.erb:5:in `_app_views_categories_show_html_erb___6778440250602964_70189977132500'
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 14:08:50 +0800
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 79ms (Views: 74.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 14:09:00 +0800
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 73ms (Views: 66.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 14:09:01 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (2.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  Rendered categories/show.html.erb within layouts/application (147.3ms)
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `hello_path' for #<#<Class:0x007facc1f97278>:0x007facc0f88f08>):
+    4:   <tbody>
+    5:   <% @category.subcategories.each do |subcategory| %>
+    6:     <tr>
+    7:       <td><%= link_to subcategory.label, hello_path(@category, subcategory) %></td>
+    8:       <td><%= link_to 'Edit', edit_category_path(subcategory) %></td>
+    9:       <td><%= link_to 'Destroy', subcategory, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+   10:     </tr>
+  
+app/views/categories/show.html.erb:7:in `block in _app_views_categories_show_html_erb___6778440250602964_70189974310140'
+app/views/categories/show.html.erb:5:in `_app_views_categories_show_html_erb___6778440250602964_70189974310140'
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 14:09:44 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 10]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/categories/masks-and-treatments" for 127.0.0.1 at 2018-05-17 14:09:46 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks-and-treatments"}
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks-and-treatments"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 11]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (6.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 11]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 53ms (Views: 41.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/categories/masks-and-treatments" for 127.0.0.1 at 2018-05-17 14:30:31 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks-and-treatments"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks-and-treatments"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 11]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 11]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 115ms (Views: 55.4ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/categories/masks" for 127.0.0.1 at 2018-05-17 14:30:33 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks"}
+  [1m[36mCategory Load (4.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 13]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 13]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 60ms (Views: 47.7ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 14:30:35 +0800
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (3.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 70ms (Views: 58.9ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 14:30:37 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 10]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 47ms (Views: 40.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/categories/masks-and-treatments" for 127.0.0.1 at 2018-05-17 14:30:38 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks-and-treatments"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks-and-treatments"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 11]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 11]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 70ms (Views: 64.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 14:30:40 +0800
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (5.6ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 84ms (Views: 72.9ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 14:30:43 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (5.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (3.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 10]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 67ms (Views: 47.6ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/categories/masks-and-treatments" for 127.0.0.1 at 2018-05-17 14:30:45 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks-and-treatments"}
+  [1m[36mCategory Load (2.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks-and-treatments"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 11]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 11]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 60ms (Views: 51.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/categories/masks" for 127.0.0.1 at 2018-05-17 14:30:54 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"masks"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "masks"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 13]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 13]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 66ms (Views: 61.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-17 14:30:56 +0800
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:13
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (6.8ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/categories/index.html.erb:14
+  Rendered categories/index.html.erb within layouts/application (59.3ms)
+Completed 200 OK in 97ms (Views: 79.1ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/categories/skin-care" for 127.0.0.1 at 2018-05-17 14:30:57 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"skin-care"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "skin-care"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 10]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 10]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 70ms (Views: 66.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/categories/moisturizer" for 127.0.0.1 at 2018-05-17 14:30:58 +0800
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"moisturizer"}
+  [1m[36mCategory Load (4.8ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."slug_url" = $1 ORDER BY "categories"."id" ASC LIMIT $2[0m  [["slug_url", "moisturizer"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  Rendering categories/show.html.erb within layouts/application
+  [1m[36mCategory Load (2.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."parent_id" = $1[0m  [["parent_id", 12]]
+  ↳ app/views/categories/show.html.erb:5
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 12]]
+  ↳ app/views/categories/show.html.erb:16
+  Rendered categories/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 45ms (Views: 30.8ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2018-05-17 18:20:18 +0800
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/web-console-3.6.2/lib/web_console/middleware.rb:135
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:13
+  Rendered products/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 294ms (Views: 267.7ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2018-05-17 18:20:21 +0800
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."slug_url" = $1 ORDER BY "products"."id" ASC LIMIT $2[0m  [["slug_url", "1"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  [1m[36mProduct Load (2.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:22
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mVariant Load (1.6ms)[0m  [1m[34mSELECT "variants".* FROM "variants" WHERE "variants"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:5
+  Rendered products/show.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 65ms (Views: 45.7ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/variants/new" for 127.0.0.1 at 2018-05-17 18:20:22 +0800
+Processing by VariantsController#new as HTML
+  Rendering variants/new.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/simple_form-4.0.0/lib/simple_form/inputs/collection_input.rb:39
+  Rendered shared/_nav.html.erb (50.7ms)
+  Rendered variants/new.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 98ms (Views: 90.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/variants" for 127.0.0.1 at 2018-05-17 18:20:33 +0800
+Processing by VariantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zXvLTVQKI6R1mxGR+mtI5ocYi84cKiQndOrM8BtSpe4w+lbM5qmyZDQJNsaIaeqVgLrFUOHKjMhwQax3hiBdzg==", "variant"=>{"name"=>"test", "sold_out"=>"false", "under_sale"=>"true", "price"=>"3700", "sale_price"=>"3400", "sale_text"=>"test", "product_id"=>"1"}, "commit"=>"Create Variant"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/variants_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/variants_controller.rb:22
+  [1m[36mVariant Create (1.9ms)[0m  [1m[32mINSERT INTO "variants" ("product_id", "name", "sold_out", "under_sale", "price", "sale_price", "sale_text") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["product_id", 1], ["name", "test"], ["sold_out", false], ["under_sale", true], ["price", 3700], ["sale_price", 3400], ["sale_text", "test"]]
+  ↳ app/controllers/variants_controller.rb:22
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/variants_controller.rb:22
+Redirected to http://localhost:3000/variants/13
+Completed 302 Found in 14ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/variants/13" for 127.0.0.1 at 2018-05-17 18:20:33 +0800
+Processing by VariantsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mVariant Load (0.2ms)[0m  [1m[34mSELECT  "variants".* FROM "variants" WHERE "variants"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/variants_controller.rb:7
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/variants_controller.rb:8
+  Rendering variants/show.html.erb within layouts/application
+  Rendered variants/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 25.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2018-05-17 18:20:35 +0800
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."slug_url" = $1 ORDER BY "products"."id" ASC LIMIT $2[0m  [["slug_url", "1"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:57
+  [1m[36mProduct Load (2.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:22
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mVariant Load (0.8ms)[0m  [1m[34mSELECT "variants".* FROM "variants" WHERE "variants"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:5
+  Rendered products/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 55ms (Views: 45.0ms | ActiveRecord: 4.9ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ spec/factories.rb:16
+  [1m[36mCategory Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:28
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ spec/factories.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ spec/factories.rb:28
+  [1m[36mCategory Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:28
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ spec/factories.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ spec/factories.rb:28
+  [1m[36mProduct Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."id" IS NOT NULL AND "products"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "productx"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:28
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "slug_url", "description", "state") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "productx"], ["slug_url", "productx"], ["description", "Hi"], ["state", "public"]]
+  ↳ spec/factories.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ spec/factories.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ spec/factories.rb:16
+  [1m[36mCategory Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:28
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ spec/factories.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ spec/factories.rb:28
+  [1m[36mCategory Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" WHERE "categories"."id" IS NOT NULL AND "categories"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "test-cat"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:28
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ spec/factories.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ spec/factories.rb:28
+  [1m[36mProduct Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."id" IS NOT NULL AND "products"."slug_url" = $1 LIMIT $2[0m  [["slug_url", "productx"], ["LIMIT", 1]]
+  ↳ /Users/raginiverma/.rvm/gems/ruby-2.4.1/gems/friendly_id-5.1.0/lib/friendly_id/finder_methods.rb:28
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "slug_url", "description", "state") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "productx"], ["slug_url", "productx-c47a8af2-fb04-41d1-b8b4-b84dbabe0e4e"], ["description", "Hi"], ["state", "public"]]
+  ↳ spec/factories.rb:28
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ spec/factories.rb:28

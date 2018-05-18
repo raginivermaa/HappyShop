@@ -22,9 +22,13 @@ class VariantsController < ApplicationController
     if @variant.save
       flash[:success] = "Successfully edited & updated variant"
       redirect_to @variant
+
     else
+      puts @variant.errors.full_messages
       render 'new'
+
     end
+
   end
 
   def update

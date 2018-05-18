@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   #get "products/:id", to: "products#show"
   #get "variants/:id", to: "variants#show"
 
-
+  get "categories/*id", to: 'categories#show'
 
 end
