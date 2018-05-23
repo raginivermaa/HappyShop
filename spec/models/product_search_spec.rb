@@ -1,0 +1,2 @@
+class ProductSearch_Spec
+end

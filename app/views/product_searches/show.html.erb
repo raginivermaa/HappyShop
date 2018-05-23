@@ -1,0 +1,18 @@
+<h1>Search Results</h1>
+
+<p><%= link_to 'Back', new_product_search_path %></p>
+
+<% if @product_search.search.empty? %>
+  <p>No Records Found</p>
+<% else %>
+  <% @product_search.search.each do |product| %>
+    <br>
+
+    <div class="div">
+      <td><%= link_to product.name, product %></td>
+      <td><%= link_to 'Edit', edit_product_path(product) %></td>
+      <td><%= link_to 'Destroy', product, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </div>
+
+  <% end %>
+<% end %>
