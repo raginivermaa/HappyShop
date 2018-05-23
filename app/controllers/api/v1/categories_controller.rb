@@ -3,8 +3,14 @@ module Api
     class CategoriesController < ApplicationController
       def index
         @categories = Category.order('label')
-        render json: {status: 'SUCCESS', message: 'LOADED ARTICLES', data:categories},status:ok
+        render json: @categories, include: params[:include], status: :ok
       end
+
+      def show
+        @category = Category.friendly.find(params[:id])
+        render json: @category, include: params[:include], status: :ok
+      end
+
     end
   end
 end

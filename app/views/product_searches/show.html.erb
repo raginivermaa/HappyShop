@@ -1,6 +1,7 @@
 <h1>Search Results</h1>
 
 <p><%= link_to 'Back', new_product_search_path %></p>
+<%= link_to 'Products', products_path %>
 
 <% if @product_search.search.empty? %>
   <p>No Records Found</p>

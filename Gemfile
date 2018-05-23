@@ -66,6 +66,8 @@ gem 'simple_form'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
+  gem 'faker'
+
 end
 
 group :test do
@@ -74,6 +76,13 @@ end
 
 group :test do
   gem 'rails-controller-testing'
+  gem 'database_cleaner'
 end
 
 gem 'factory_bot_rails'
+gem 'active_model_serializers'
+
+gem 'will_paginate', '~> 3.0.7'
+gem 'api-pagination'
+gem 'ancestry'
+

@@ -2,25 +2,43 @@
 
 <h1>Products</h1>
 
+<%= form_tag products_path, :method => "get" do %>
+  Keywords
+  <%= text_field_tag :keywords, params[:keywords] %>
+  Sort By
+  <%= select_tag :sort_by, options_for_select(['id', 'name', 'description']) %>
+  Category
+  <%= select_tag :parent, options_from_collection_for_select(@categories, 'id', 'label'), :include_blank => true %>
+  Page
+  <%= text_field_tag :page, params[:page], :include_blank => false %>
+  Products per Page
+  <%= text_field_tag :size, params[:size], :include_blank => false %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<p/>
+
 <table>
   <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
+  <tr>
+    <th colspan="3"></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= link_to product.name, product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= link_to product.name, product %></td>
+      <td><%= link_to 'Edit', edit_product_path(product) %></td>
+      <td><%= link_to 'Destroy', product, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
   </tbody>
 </table>
 
 <br>
 
+<%= will_paginate @products %>
 <%= link_to 'New Product', new_product_path %>
-<%= link_to 'Back', categories_path(@categories) %>
+<%= link_to 'Categories', categories_path(@categories) %>
+<%= link_to 'Products', products_path %>

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe CategoriesController, type: :controller do
+RSpec.describe Api::V1::CategoriesController, type: :routing do
 
   let(:category_label) {'Test Cat'}
   let(:cat) {Category.create(label: category_label, state: 'public')}
@@ -24,5 +24,7 @@ RSpec.describe CategoriesController, type: :controller do
         get: '/api/v1/categories/parent1/parent2/some-category'
     ).to route_to(controller: 'api/v1/categories', action: 'show', id: 'parent1/parent2/some-category')
   end
+
+
 
 end

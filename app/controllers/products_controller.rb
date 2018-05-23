@@ -1,6 +1,34 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.all
+    if params[:page]
+      if params[:page] == ""
+        page = 1
+      else
+        page = params[:page]
+      end
+    else
+      page = 1
+    end
+
+    if params[:size]
+      if params[:size] == ""
+        size = 3
+      else
+        size = params[:size]
+      end
+    else
+      size = 3
+    end
+
+
+    @product_search = ProductSearch.new
+
+    @product_search.search(params).sort_by(params[:sort_by])
+
+
+    @products = @product_search.products.paginate(page: page, per_page: size)
+    @categories = Category.all
+
   end
 
   def show

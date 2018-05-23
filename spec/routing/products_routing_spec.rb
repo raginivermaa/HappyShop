@@ -1,13 +1,12 @@
 require 'rails_helper'
 
-describe "routes to ProductsController" do
+RSpec.describe ProductsController, type: :routing do
 
-  let(:cat) {Category.create(label: 'Cat', state: 'public')}
-  let(:product_name) {'Prod'}
-  let(:prod) {Product.create(name: product_name, state: 'public', category: cat, description: 'Hi')}
-  it {should route(:get, '/products').to(action: :index)}
-
-  it {should route(:get, '/products/prod').to(action: :show, id: :prod)}
+  it 'should route to main list' do
+    expect(
+        get: '/products'
+    ).to route_to(controller: 'products', action: 'index')
+  end
 
   it 'routes to correct index' do
     expect(
