@@ -3,9 +3,9 @@ require 'rails_helper'
 describe VariantsController, :type => :controller do
 
 
-  let(:cat) {Category.create(label: 'Cat', state: 'public')}
+  let(:cat) {Category.create(label: 'Cat', state: 'published')}
   let(:product_name) {'Prod'}
-  let(:prod) {Product.create(name: product_name, state: 'public', category: cat, description: 'Hi')}
+  let(:prod) {Product.create(name: product_name, state: 'published', category: cat, description: 'Hi')}
   let(:var_name) {'Var'}
   let(:var){Variant.create(name: var_name, sold_out: 'false', under_sale: 'true', price: 400, sale_price: 300, product: prod)}
 

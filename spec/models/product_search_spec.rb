@@ -7,10 +7,10 @@ RSpec.describe ProductSearch, type: :model do
     expect(product_search.products).to eq(Product.all)
   end
 
-  let(:cat) {Category.create(label: 'Cat', state: 'public')}
-  let(:happy_elephant) {Product.create(name: 'Happy Elephant', state: 'public', category: cat, description: 'Hi')}
-  let(:happy_cow) {Product.create(name: 'Happy Cow', state: 'public', category: cat, description: 'Hello')}
-  let(:sad_monkey) {Product.create(name: 'Sad Monkey', state: 'public', category: cat, description: 'Hello')}
+  let(:cat) {Category.create(label: 'Cat', state: 'published')}
+  let(:happy_elephant) {Product.create(name: 'Happy Elephant', state: 'published', category: cat, description: 'Hi')}
+  let(:happy_cow) {Product.create(name: 'Happy Cow', state: 'published', category: cat, description: 'Hello')}
+  let(:sad_monkey) {Product.create(name: 'Sad Monkey', state: 'published', category: cat, description: 'Hello')}
   let(:search) {{keywords: 'Happy'}}
   let(:sort_by) {'name'}
 

@@ -16,8 +16,8 @@ RSpec.describe Variant, type: :model do
 
   it "should have sale_price if on sale" do
 
-    cat = Category.create(label: 'Cat', state: 'public')
-    product = Product.create(name: 'Prod', state: 'public', description: 'test', category: cat)
+    cat = Category.create(label: 'Cat', state: 'published')
+    product = Product.create(name: 'Prod', state: 'published', description: 'test', category: cat)
 
     variant1 = Variant.create(name: 'newVariant', sold_out: 'false', under_sale: 'true', price: 400, sale_price: 300, product: product)
     expect(variant1).to be_valid
@@ -27,8 +27,8 @@ RSpec.describe Variant, type: :model do
   end
 
   scenario "sale_price should be less than original price" do
-    cat = Category.create(label: 'Cat', state: 'public')
-    product = Product.create(name: 'Prod', state: 'public', description: 'test', category: cat)
+    cat = Category.create(label: 'Cat', state: 'published')
+    product = Product.create(name: 'Prod', state: 'published', description: 'test', category: cat)
     variant = Variant.create(name: 'newVariant', sold_out: 'false', under_sale: 'true', price: 400, sale_price: 500, product: product)
     expect(variant).to be_invalid
   end

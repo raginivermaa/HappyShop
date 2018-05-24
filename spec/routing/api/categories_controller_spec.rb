@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Api::V1::CategoriesController, type: :routing do
 
   let(:category_label) {'Test Cat'}
-  let(:cat) {Category.create(label: category_label, state: 'public')}
+  let(:cat) {Category.create(label: category_label, state: 'published')}
   it {should route(:get, '/api/v1/categories').to(action: :index, controller: 'api/v1/categories')}
   it {should route(:get, '/api/v1/categories/test-cat').to(action: :show, id: cat.slug_url, controller: 'api/v1/categories')}
 

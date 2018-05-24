@@ -9,7 +9,7 @@ class Product < ApplicationRecord
   validates :name, presence: true
   validates :state, presence: true
   validates :description, presence: true
-  validates :state, inclusion: { in: %w(draft public discontinued) }
+  validates :state, inclusion: { in: %w(draft published discontinued) }
 
 
 end

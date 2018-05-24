@@ -3,7 +3,7 @@ require 'rails_helper'
 describe CategoriesController, :type => :controller do
 
   let(:category_label) {'Test Cat'}
-  let(:cat) {Category.create(label: category_label, state: 'public')}
+  let(:cat) {Category.create(label: category_label, state: 'published')}
 
 
   describe "PUT 'update/:id'" do

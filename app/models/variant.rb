@@ -8,7 +8,7 @@ class Variant < ApplicationRecord
   validates :price, presence: true
 
   validates :sale_price, presence: true, if: :under_sale
-  validates :sale_price, numericality: {less_than: :price}
+  validates :sale_price, numericality: {less_than: :price}, if: :under_sale
 
 
 end

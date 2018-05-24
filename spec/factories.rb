@@ -4,7 +4,7 @@ FactoryBot.define do
     sequence :label do |n|
       "Cat#{n}"
     end
-    state "public"
+    state "published"
   end
 
   factory :product do |p|
@@ -12,7 +12,7 @@ FactoryBot.define do
       "Prod#{n}"
     end
     description "testProd"
-    state "public"
+    state "published"
     association :category, factory: :category
   end
 

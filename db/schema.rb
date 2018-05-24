@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 2018_05_11_041924) do
 
   create_table "categories", force: :cascade do |t|
     t.integer "parent_id"
-    t.string "label"
+    t.string "label", null: false
     t.string "slug_url"
-    t.string "state"
+    t.string "state", null: false
     t.index ["parent_id"], name: "index_categories_on_parent_id"
   end
 
@@ -37,10 +37,10 @@ ActiveRecord::Schema.define(version: 2018_05_11_041924) do
 
   create_table "products", force: :cascade do |t|
     t.bigint "category_id"
-    t.string "name"
-    t.string "slug_url"
-    t.string "description"
-    t.string "state"
+    t.string "name", null: false
+    t.string "slug_url", null: false
+    t.string "description", null: false
+    t.string "state", null: false
     t.index ["category_id"], name: "index_products_on_category_id"
   end
 

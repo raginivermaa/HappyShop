@@ -2,9 +2,9 @@ require 'rails_helper'
 
 describe Api::V1::ProductsController, :type => :controller do
 
-  let(:cat) {Category.create(label: 'Cat', state: 'public')}
+  let(:cat) {Category.create(label: 'Cat', state: 'published')}
   let(:product_name) {'Prod'}
-  let(:prod) {Product.create(name: product_name, state: 'public', category: cat, description: 'Hi')}
+  let(:prod) {Product.create(name: product_name, state: 'published', category: cat, description: 'Hi')}
 
   describe "GET 'index' " do
     it "returns a successful response" do

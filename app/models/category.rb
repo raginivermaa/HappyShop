@@ -11,7 +11,7 @@ class Category < ApplicationRecord
 
   validates :label, presence: true
   validates :state, presence: true
-  validates :state, inclusion: { in: %w(draft public discontinued) }
+  validates :state, inclusion: { in: %w(draft published discontinued) }
 
   def descendents
     subcategories.map do |subcategory|

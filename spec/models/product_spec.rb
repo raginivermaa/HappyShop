@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Product, type: :model do
   it "has a valid slug url" do
-    product = Product.create(name: 'Test Product', description: 'Hi', state: 'public')
+    product = Product.create(name: 'Test Product', description: 'Hi', state: 'published')
     expect(product.slug_url).to eq('test-product')
   end
 
@@ -12,7 +12,7 @@ RSpec.describe Product, type: :model do
 
   it do
     should validate_inclusion_of(:state).
-        in_array(['draft', 'public', 'discontinued'])
+        in_array(['draft', 'published', 'discontinued'])
   end
 
 

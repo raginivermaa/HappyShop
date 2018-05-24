@@ -12,7 +12,7 @@ RSpec.describe Category, type: :model do
 
   it do
     should validate_inclusion_of(:state).
-        in_array(['draft', 'public', 'discontinued'])
+        in_array(['draft', 'published', 'discontinued'])
   end
 
 
