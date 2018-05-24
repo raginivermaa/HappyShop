@@ -5,7 +5,7 @@
 <%= simple_form_for @category do |c| %>
   <%= c.input :label %> <br>
   State:
-  <%= c.select :state, ['public', 'draft', 'discontinued'] %> <br> <br>
+  <%= c.select :state, ['published', 'draft', 'discontinued'] %> <br> <br>
   <%= c.association :parent, label_method: :label, include_blank: true %> <br>
   <%= c.button :submit %>
 <% end %>

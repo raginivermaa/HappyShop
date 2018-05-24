@@ -6,7 +6,7 @@
   <%= f.input :name %> <br>
   <%= f.input :description %> <br>
   State <br>
-  <%= f.select :state, ['public', 'draft', 'discontinued'] %> <br> <br>
+  <%= f.select :state, ['published', 'draft', 'discontinued'] %> <br> <br>
   <%= f.association :category, label_method: :label, value_method: :id, include_blank: false %> <br>
   <%= f.button :submit %>
 <% end %>
