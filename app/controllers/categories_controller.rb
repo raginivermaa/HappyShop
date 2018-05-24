@@ -36,10 +36,10 @@ class CategoriesController < ApplicationController
 
 
   def destroy
-    @variant = Variant.find(params[:id])
-    @variant.destroy
+    @category = Category.friendly.find(params[:id])
+    @category.destroy
 
-    redirect_to variants_path
+    redirect_to categories_path
   end
 
   private
